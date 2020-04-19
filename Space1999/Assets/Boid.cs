@@ -9,7 +9,7 @@ public class Boid : MonoBehaviour {
     public Vector3 acceleration = Vector3.zero;
     public Vector3 velocity = Vector3.zero;
     public float mass = 1;
-    public float maxSpeed = 5.0f;   
+    public float maxSpeed = 10.0f;   
     
     // Use this for initialization
     void Start () {
