@@ -32,8 +32,7 @@ public class OffsetPursue : SteeringBehaviour {
     public override Vector3 Calculate()
     {
         worldtarget = leader.transform.TransformPoint(offset);
-        float dist = Vector3.Distance(worldtarget
-            , transform.position);
+        float dist = Vector3.Distance(worldtarget, transform.position);
         float time = dist / boid.maxSpeed;
 
         Vector3 targetPos = worldtarget + leader.velocity * time;
